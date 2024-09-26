@@ -1,0 +1,24 @@
+.container__movie-card-one {
+    background-color: #141414;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+
+    .movie-card-poster {
+        img {
+            width: 500px;
+        }
+    }
+
+    .movie-card-title {
+        color: white;
+    }
+
+    .movie-card-overview {
+        color: white;
+    }
+
+}

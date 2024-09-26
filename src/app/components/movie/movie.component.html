@@ -1,0 +1,12 @@
+<div class="container__movie-component">
+    
+    @for (movie of movies; track movie.id) {
+        <a class="movie-link" [routerLink]="['/movie', movie.id,movie.poster_path, movie.title, movie.overview]">
+            <div class="movie-card">
+                <div class="movie-poster"><img [src]="getFullImageUrl(movie.poster_path)" alt=""></div>
+                <div class="movie-title"><h2>{{movie.title}}</h2></div>
+                <div class="movie-description">{{ movie.overview }}</div>
+            </div>
+        </a>
+    }
+</div>

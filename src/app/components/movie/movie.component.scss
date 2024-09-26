@@ -1,0 +1,25 @@
+.container__movie-component {
+
+    background-color: #141414;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .movie-link {
+
+        .movie-card {
+            background-color: #4d4d4d;
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0px;
+
+            &:hover {
+                transition: .2s;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
