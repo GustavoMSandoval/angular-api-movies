@@ -1,8 +1,8 @@
 .container__movie-card-one {
-    background-color: #141414;
+
+    overflow-x: hidden;
 
     color: white;
-
     display: flex;
     justify-content: center;
 
@@ -12,10 +12,38 @@
         width: 500px;
         margin: 90px;
 
+        @media (max-width:400px) {
+            width: 100%;
+            margin: 0px;
+            h2 {
+                font-size: medium;
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+
+
+        .movie-card-poster {
+            img {
+                
+                border-radius: 20px;
+
+                @media (max-width:400px) {
+                     width: 100%;
+                }
+            }
+        }
+
         .movie-card-top-info {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media (max-width:400px) {
+                justify-content: space-around;
+            }
 
             .movie-card-stars {
                 

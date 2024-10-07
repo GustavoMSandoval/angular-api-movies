@@ -46,12 +46,12 @@ export class MovieViewComponent implements OnInit {
 
  
 
-  ngOnInit() {
-    this.activeRoute.paramMap.subscribe( (params) => {
+async ngOnInit() {
+    this.activeRoute.paramMap.subscribe( async (params) => {
     
           this.movieId = params.get('id');
           if(this.movieId) {
-            this.loadMovie();
+            await this.loadMovie();
           } else {
             console.log("Error loadMovie")
           }
