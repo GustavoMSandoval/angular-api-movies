@@ -1,7 +1,18 @@
 <div class="container__movie-card-one">
    <div class="movie-card">
     <div class="movie-card-poster">
+        <img [src]="getFullImageUrl(movie?.poster_path)" alt="">
+    </div>
+    <div class="movie-card-top-info">
         
+        <h2>{{movie?.title}}</h2>
+        <p class="movie-card-stars"><span [innerHTML]="starSvg"></span> {{movie?.vote_average?.toFixed(1)}}</p>
+        
+    </div>
+    <div class="movie-card-bottom-info">
+        <p> <span>Date of release:</span> {{movie?.release_date}}</p>
+        <p> <span>Runtime:</span> {{movie?.runtime}}min</p>
+        <p> <span>Description: </span>{{movie?.overview}}</p>
     </div>
    </div>
 </div>
