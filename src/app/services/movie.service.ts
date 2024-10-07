@@ -16,6 +16,10 @@ export class MovieService {
   constructor() { }
 
   getMovies() : Observable<MovieDetail> {
-    return this.http.get<MovieDetail>(`${apiUrl}?api_key=${apiKey}`)
+    return this.http.get<MovieDetail>(`${apiUrl}discover/movie?api_key=${apiKey}`)
+  }
+
+  getMovie(movieId:string): Observable<MovieDetail> {
+    return this.http.get<MovieDetail>(`${apiUrl}movie/${movieId}?api_key=${apiKey}`)
   }
 }
