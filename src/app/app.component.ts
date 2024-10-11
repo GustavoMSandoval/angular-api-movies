@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from "./components/header/header.component";
 
@@ -11,5 +11,11 @@ import { HeaderComponent } from "./components/header/header.component";
   styleUrls:[ './app.component.scss' ]
 })
 export class AppComponent {
-  title = 'api-test';
+  constructor(private router: Router ) {}
+
+  RouteValidation(): boolean {
+    return this.router.url !== '/';
+  }
+
+  
 }
