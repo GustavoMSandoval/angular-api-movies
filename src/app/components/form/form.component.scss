@@ -1,0 +1,50 @@
+.container__form {
+    height: 100vh;
+
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        .form-title {
+            margin-bottom: 20px;
+            
+            h2 {
+                
+                font-size: 59px;
+            }
+        }
+
+        form {
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .form-links {
+           width: 230px;
+
+           button {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+           }
+        }
+    }
+
+    .form-right {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: black;
+    }
+}

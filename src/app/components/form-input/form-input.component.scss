@@ -1,0 +1,29 @@
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 20px;
+
+
+    input {
+        padding: 10px;
+        border: none;
+        border-bottom: 3px solid black;
+        
+        &::placeholder {
+            font-weight: 700;
+        }
+
+        &[type="submit"] {
+            border: none;
+            border-radius: 20px;
+            padding: 15px;
+
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+    }
+
+   
+}
